@@ -1,0 +1,179 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+.header { /* está englobando a img e o nav*/
+    padding: 40px 130px; /* para centralizar dentro do background*/
+    background: 
+        url(../image/reprograma.png) /* caminho da imagem*/
+        top center / 100% /*position / size*/
+        no-repeat; /*repeat*/
+    height: 730px;
+    width: 100%;
+    display: flex; /* voltou para flex para poder ter comportamento de cada item em coluna*/
+    flex-direction: column; /* se não fosse coluna não conseguiria colocar o reprograma no local certo*/
+    }
+
+.wrapper {
+    display: flex;
+    justify-content: space-between; /* referente aquela imagem colorida do B.E.M*/
+    position: fixed; /* com este comando o nav e o logo fica congelado na tela, segue na navegação, mas perdeu a configuração
+    de space-between.*/
+    border: 2px solid purple; /* a borda foi só para ver ele andar por causa da cor da tela para vermos o nav andar na tela */
+}
+.nav { /* está englobando a ul (menu)*/
+}
+.menu { /* engloba cada item da lista (li)*/
+    display:flex;
+}
+.menu__item { /* engloba o link*/
+    margin: 0 16px;
+    padding: 8px;
+}
+.menu__item__link {
+    font-size: 21px;
+    text-decoration:none;
+    color: #ffffff;
+}
+.text { /* engloba o title e subtitle*/
+     color: #ffffff;
+     width: 400px;
+     margin-top: 270px; /*delimitou na parte de baixo posicionando bem na imagem*/
+}
+.text__title { /* engloba o {reprograma} irmão do text__subt..*/
+    font-size: 72px;
+}
+.text__subtitle { /* engloba o texto reduzindo o gap... irmão do text__title*/
+     font-size: 24px;
+     width:400px; /* serve para limitar o tamanho da caixa do sub titulo*/
+     margin-bottom: 34px /* add margem abaixo do subtitulo*/
+}
+/* aqui são as classes dos botões e tem 2 classes no btn no mesmo lugar*/
+.btn { /* aqui altera os dois botões de uma só vez*/
+    text-transform: uppercase; /* deixa tudo maiusculo*/
+    font-size: 18px; /* tamanho da letra dentro do botão*/
+    padding: 16px 45px; /* definindo o tamanho dos botões*/
+    border-radius: 28px; /* para arredondar os botões e coloca aqui para aplicar o efeito nos 2*/
+    display: inline-block; /* a classe de # é inline ai precisa mudar pra inline block*/
+    text-decoration: none;
+    font-weight: 600; /* deixa a letra mais grossa*/
+}
+.btn__primary { /* botão participe*/
+    color: #7e459b; /* letra*/
+    background: #ffffff; /*fundo*/
+}
+.btn__secondary { /* botão apoie*/
+    background: transparent; /* ou rgba(0,0,0) deixa o fundo transparente*/
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+.box__icons {
+    margin: 42px 120px;
+    display:flex;
+}
+.box {
+    width: 500px;
+}
+.box--right {
+    margin-left: auto;
+    /*margin: 42px 120px;*/
+}
+.section__2 {
+    display:flex;
+    justify-content: space-between;
+    margin: 42px 78px; /* igual a la de cima*/
+}
+.about__h2 {
+    color: #b382ba; /* pegar font no google*/
+    font-size: 90px;
+    padding: 8% 0;
+    width: 500px;
+    line-height: 100px;
+    margin-right: 120px;
+}
+.about__p {
+    background: red;
+    font-family: ;
+    font-size: 24px;
+    padding: 20px;
+    width: 358px;
+    margin: auto;
+    margin-left: 120px;
+    font-weight:
+}
+.statistics {
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.statistics__box{
+    text-align: center;
+    font-size: 24px;
+    line-height: 55px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 0;
+}
+
+.statistics__box__title {
+    color:#892d9c;
+    font-size: 90px;
+    text-align: center;
+    font-weight: 900; /* deixa a fomte mais fina*/
+}
+
+
+
+
+/*.section__3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div__3 {
+    justify-content: space-around;
+    text-align: center;
+    color: #b382ba;
+}
+
+
+
+
+
+/* terminar essa parte de cima*/
+
+/* configuração do menu fixo em cima daqui p baixo*/
+/* colocar position: fixed dentro do wrapper ai o logo e a nav bar seguem na parte superior da tela.
+position fixed faz o conteudo ficar congelado no mesmo lugar e seguir na tela mesmo com scroll.
+Sempre tem que colocar uma referencia pra ele saber onde vai ficar. então para fizar ele no topo digita em baixo top.
+Então fica: 
+position: fixed;
+top: 0; para ele ir lá pra cima - aqui eu falo onde quero colocar o elemento
+width: 100% - para ele ocupar 100% da tela em cima. ele também poderia ocupar só metade por ex.
+
+Para posicionar na direta embaixo 
+position fixed
+right 0 fica no canto extremo, se eu colocar 100px fica 100px a partir da direita.
+bottom 0 fica na parte inferior, se eu colocar algum px fica no lugar indicado.
+
+quando já está dentro de um elemento usa o 
+position absolut - posicionando dentro do pai dele
+top 0  - que será o topo do pai
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
